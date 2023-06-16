@@ -11,6 +11,7 @@ public class PlaywrightExampleApp {
       page.navigate("https://playwright.dev/");
       // https://playwright.dev/java/docs/api/class-page#page-pdf
       page.pdf(new Page.PdfOptions().setPath(Paths.get("example.pdf")));
+      System.out.println("Page saved to .pdf file");
       page.close();
     }
   }
